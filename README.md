@@ -18,21 +18,23 @@ Data Exploration and Preprocessing:
 The dataset is loaded and examined for insights into data types and missing values.
 Missing values are imputed with column means, ensuring data completeness.
 Data distributions are visualized through histograms and correlation analysis.
+
 Feature Engineering:
 
 The 'total sulfur dioxide' column is dropped as it is deemed unnecessary.
 A new binary column, 'best quality,' is created to represent quality categories.
 The 'type' column is transformed for modeling.
+
 Data Splitting and Normalization:
 
 The dataset is split into training and testing sets (80% train, 20% test).
 Min-Max scaling is applied to normalize feature values.
-Model Selection and Evaluation:
 
+Model Selection and Evaluation:
 Three classification models, including Logistic Regression, XGBoost, and SVC with RBF kernel, are selected.
 Models are trained and evaluated using ROC AUC scores on both training and testing sets, assessing their predictive accuracy.
-Model Performance Visualization:
 
+Model Performance Visualization:
 Confusion matrices are plotted, providing visual insights into model performance, with a focus on XGBoost.
 Classification reports, encompassing precision, recall, and F1-score, are generated for detailed model assessment.
 
